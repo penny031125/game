@@ -1429,9 +1429,9 @@
             B += "function F97(X,Y,OX,OY,Angle){X-=OX;Y-=OY;var r=Angle*(Math.PI/180);var ct=Math.cos(r);var st=Math.sin(r);var x=ct*X-st*Y;var y=st*X+ct*Y;var Point=new Object();Point.X=x+OX;Point.Y=y+OY;return Point;}";
             B += "<" + "/script>";
             B += "</" + "head>";
-            B += "<body onload=\"window.setTimeout('F86();', 100);window.setTimeout(function(){console.log(document.getElementsByTagName('audio'));document.getElementsByTagName('audio')[0].play();},4000);\" onresize=\"F77();\" onorientationchange=\"F77();\" ondragstart=\"return false;\" style=\"cursor:default;\" " + MouseDown + "=\"focus();var m=F70(event);\" onkeydown=\"var Key=GetKey(event);F2(Key);\">";
+            B += "<body onload=\"window.setTimeout('F86();', 100);\" onresize=\"F77();\" onorientationchange=\"F77();\" ondragstart=\"return false;\" style=\"cursor:default;\" " + MouseDown + "=\"focus();var m=F70(event);\" onkeydown=\"var Key=GetKey(event);F2(Key);\">";
             if (HasWebAudio) {} else if (HasMp3Audio || HasOggAudio) {
-                B += "<audio id=\"Sound_YouTube音樂庫 免費背景音樂下載 歌名 Darktown Strutters Ball 作者 Silent Partner Happy Music 開心音樂 NCS Music\" preload=\"auto\" autobuffer=\"true\" autoplay></audio>";
+                B += "<iframe  allow=\"autoplay\" id=\"Sound_YouTube音樂庫 免費背景音樂下載 歌名 Darktown Strutters Ball 作者 Silent Partner Happy Music 開心音樂 NCS Music\" preload=\"auto\" autobuffer=\"true\" autoplay></iframe>";
             } else {
                 if (IE > -1) {
                     B += "<object classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\"";
